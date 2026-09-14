@@ -1,3 +1,3 @@
-# Kapital landing assets
+# leto
 
-Static assets for the Kapital landing page.
+Landing assets for Kapital.
