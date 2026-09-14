@@ -1,0 +1,167 @@
+#kapital-v11 .m-value-proof{position:relative;overflow:hidden;}
+#kapital-v11 .m-value-proof:before,
+#kapital-v11 .m-value-proof:after{display:none;}
+#kapital-v11 .m-value-proof .m-shell{position:relative;z-index:1;}
+#kapital-v11 .m-value-proof-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.72fr);gap:38px;align-items:end;}
+#kapital-v11 .m-value-proof h2{margin:8px 0 0;font-size:clamp(38px,4.25vw,56px);line-height:.99;letter-spacing:-1.6px;}
+#kapital-v11 .m-value-proof-head>p{margin:0 0 2px;max-width:480px;font-size:13px;line-height:1.52;}
+#kapital-v11 .m-value-proof-panel{border-radius:0;overflow:visible;}
+@media (max-width:1000px){#kapital-v11 .m-value-proof-head{grid-template-columns:1fr;
+    gap:14px;}#kapital-v11 .m-value-proof-head>p{max-width:680px;}#kapital-v11 .m-value-proof-panel{grid-template-columns:1fr 1fr;}}
+@media (max-width:700px){#kapital-v11 .m-value-proof{padding:46px 0 48px;}#kapital-v11 .m-value-proof h2{font-size:36px;}#kapital-v11 .m-value-proof-panel{grid-template-columns:1fr;
+    gap:8px;
+    margin-top:20px;}#kapital-v11 .m-value-proof-item{min-height:122px;
+    padding:16px 18px;}#kapital-v11 .m-value-proof-item strong{margin-top:14px;}#kapital-v11 .m-value-proof-conclusion{grid-template-columns:1fr;
+    gap:4px;
+    margin-top:8px;}}
+#kapital-v11 .m-value-proof{padding:58px 0 60px;background:#fff;color:var(--ink);}
+#kapital-v11 .m-value-proof .m-kicker{color:var(--green2);}
+#kapital-v11 .m-value-proof h2{color:var(--ink);}
+#kapital-v11 .m-value-proof h2 em{color:var(--green);}
+#kapital-v11 .m-value-proof-head>p{color:#303A34;}
+#kapital-v11 .m-value-proof-panel{margin-top:24px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;background:transparent;}
+#kapital-v11 .m-value-proof-item{min-height:142px;padding:18px 20px 17px;border:0;border-radius:16px;display:flex;flex-direction:column;justify-content:flex-start;box-shadow:none;}
+#kapital-v11 .m-value-proof-item small{margin:0;font-size:9px;line-height:1.2;letter-spacing:.14em;font-weight:700;}
+#kapital-v11 .m-value-proof-item strong{display:block;margin-top:18px;font-size:clamp(26px,2.4vw,34px);line-height:1;letter-spacing:-1px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;}
+#kapital-v11 .m-value-proof-item span{display:block;margin-top:8px;font-size:10.5px;line-height:1.38;}
+#kapital-v11 .m-value-proof-conclusion{min-height:56px;margin-top:10px;padding:13px 17px;border:0;border-radius:14px;display:grid;grid-template-columns:135px 1fr;gap:18px;align-items:center;}
+#kapital-v11 .m-value-proof-conclusion span{font-size:8.5px;line-height:1.2;letter-spacing:.12em;font-weight:700;text-transform:uppercase;}
+#kapital-v11 .m-value-proof-conclusion b{font-size:12.5px;line-height:1.4;font-weight:600;}
+@media (max-width:1000px){#kapital-v11 .m-value-proof-panel{grid-template-columns:1fr 1fr;}}
+@media (max-width:700px){#kapital-v11 .m-value-proof{padding:46px 0 48px;}#kapital-v11 .m-value-proof-panel{grid-template-columns:1fr;
+    gap:8px;}}
+#kapital-v11 .m-decisions{padding-bottom:24px;}
+#kapital-v11 .m-value-proof{padding-top:28px;}
+@media (max-width:700px){#kapital-v11 .m-decisions{padding-bottom:18px;}#kapital-v11 .m-value-proof{padding-top:22px;}}
+#kapital-v11 .m-legal{background:#fff;}
+#kapital-v11 .m-legal .m-foot{color:var(--ink);font-size:10px;line-height:1.55;font-weight:400;}
+#kapital-v11 .m-legal .m-foot a{color:#0B6F55;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;transition:.18s ease;}
+#kapital-v11 .m-legal .m-foot a:hover{color:#113B2E;}
+#kapital-v11 .m-hero p,
+#kapital-v11 .m-all-head p,
+#kapital-v11 .m-feature p,
+#kapital-v11 .m-demo-head p,
+#kapital-v11 .m-slide-copy p,
+#kapital-v11 .m-decisions-head > p,
+#kapital-v11 .m-value-proof-head > p,
+#kapital-v11 .m-price-copy,
+#kapital-v11 .m-faq-section .m-faq-head > p,
+#kapital-v11 .m-faq-section details p{color:var(--ink);}
+#kapital-v11 .m-included-item p,
+#kapital-v11 .m-price-checks div,
+#kapital-v11 .m-price-list span{color:var(--ink);}
+#kapital-v11 .m-value-proof-head > p{color:var(--ink);}
+#kapital-v11 .m-software h2,
+#kapital-v11 .m-software-card h3,
+#kapital-v11 .m-included h2,
+#kapital-v11 .m-fit h2,
+#kapital-v11 .m-fit-col h3,
+#kapital-v11 .m-final h2,
+#kapital-v11 .m-final-buy strong{color:#fff;}
+@media (max-width:700px){#kapital-v11 .m-decisions-head{display:grid;
+    grid-template-columns:1fr;
+    gap:14px;
+    align-items:start;}#kapital-v11 .m-decisions-head > p{margin:0;
+    max-width:none;
+    font-size:13px;
+    line-height:1.5;}#kapital-v11 .m-included-grid{gap:8px;}#kapital-v11 .m-included-item{min-height:108px;
+    padding:14px 16px;
+    border-radius:14px;}#kapital-v11 .m-included-item h3{margin-top:7px;
+    font-size:17px;
+    line-height:1.05;}#kapital-v11 .m-included-item p{margin-top:5px;
+    font-size:10.5px;
+    line-height:1.4;}}
+#kapital-v11 .m-value-proof-item{background:var(--green);color:#fff;}
+#kapital-v11 .m-value-proof-item small{color:var(--lime);}
+#kapital-v11 .m-value-proof-item strong{color:#fff;}
+#kapital-v11 .m-value-proof-item span{color:#C5D2CB;}
+#kapital-v11 .m-final-buy{padding-left:24px;}
+#kapital-v11 .m-legal{padding:16px 0 18px;}
+@media (max-width:700px){#kapital-v11 .m-final{padding:42px 0 28px;}#kapital-v11 .m-final h2{font-size:34px;
+    line-height:1;
+    letter-spacing:-1.3px;}#kapital-v11 .m-final p{font-size:12.5px;}#kapital-v11 .m-final-buy{padding-top:20px;}#kapital-v11 .m-final-buy strong{font-size:52px;}}
+@media (max-width:700px){#kapital-v11 .m-final h2{font-size:31px;
+    line-height:1.02;
+    letter-spacing:-1.1px;}#kapital-v11 .m-final h2 em{margin-top:16px;}}
+#kapital-v11 .m-how{color:var(--ink);}
+#kapital-v11 .m-how-head{display:grid;}
+#kapital-v11 .m-how h2{margin:9px 0 0;font-weight:700;}
+#kapital-v11 .m-how h2 em{font-style:normal;}
+#kapital-v11 .m-how-head > p{color:var(--ink);}
+#kapital-v11 .m-how-grid{display:grid;grid-template-columns:repeat(3,1fr);}
+#kapital-v11 .m-how-card small{color:var(--green2);font-size:9px;letter-spacing:.14em;font-weight:700;}
+#kapital-v11 .m-how-card h3{font-weight:700;}
+#kapital-v11 .m-how-card p{color:var(--ink);}
+#kapital-v11 .m-buy-legal{position:relative;z-index:1;margin-top:14px;color:#D7EEE5;font-size:9px;line-height:1.5;}
+#kapital-v11 .m-buy-legal a{color:#fff;text-decoration:underline;text-underline-offset:2px;}
+#kapital-v11 .m-price-card .m-btn{width:100%;justify-content:space-between;}
+@media (max-width:1000px){#kapital-v11 .m-how-head{grid-template-columns:1fr;
+    gap:14px;}#kapital-v11 .m-how-grid{grid-template-columns:1fr;}#kapital-v11 .m-how-card{min-height:170px;}}
+@media (max-width:700px){#kapital-v11 .m-how{padding:50px 0;}#kapital-v11 .m-how h2{font-size:36px;}#kapital-v11 .m-how-card{min-height:145px;
+    padding:18px;}#kapital-v11 .m-how-card h3{margin-top:26px;
+    font-size:21px;}#kapital-v11 .m-price-card .m-btn{font-size:10.5px;
+    gap:10px;}}
+#kapital-v11 .m-how{padding:38px 0 56px;background:var(--cream);}
+#kapital-v11 .m-how-head{grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);gap:34px;align-items:end;}
+#kapital-v11 .m-how h2{margin-top:8px;max-width:720px;font-size:clamp(38px,4.15vw,56px);line-height:.98;letter-spacing:-1.7px;}
+#kapital-v11 .m-how h2 em{display:block;margin-top:6px;color:var(--green2);}
+#kapital-v11 .m-how-head > p{max-width:500px;margin:0 0 3px;font-size:13px;line-height:1.5;}
+#kapital-v11 .m-how-grid{margin-top:24px;gap:10px;}
+#kapital-v11 .m-how-card{min-height:184px;padding:20px 21px 19px;border-radius:18px;border:1px solid rgba(11,16,13,.08);background:#fff;display:flex;flex-direction:column;transition:.2s ease;}
+#kapital-v11 .m-how-card:hover{transform:translateY(-2px);border-color:rgba(11,127,94,.22);}
+#kapital-v11 .m-how-step{display:flex;align-items:center;gap:10px;}
+#kapital-v11 .m-how-step b{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:50%;background:#E4F4ED;color:var(--green2);font-size:10px;line-height:1;font-weight:800;}
+#kapital-v11 .m-how-step span{color:var(--green2);font-size:9px;line-height:1;letter-spacing:.13em;text-transform:uppercase;font-weight:700;}
+#kapital-v11 .m-how-card h3{margin:24px 0 0;font-size:22px;line-height:1.05;letter-spacing:-.65px;}
+#kapital-v11 .m-how-card p{margin:8px 0 0;font-size:11.5px;line-height:1.45;}
+#kapital-v11 .m-how-card-result{border-color:var(--green);}
+@media (max-width:1000px){#kapital-v11 .m-how{padding-top:30px;}#kapital-v11 .m-how-head{grid-template-columns:1fr;
+    gap:12px;}#kapital-v11 .m-how h2 em{display:inline;
+    margin-top:0;}#kapital-v11 .m-how-grid{grid-template-columns:1fr;}#kapital-v11 .m-how-card{min-height:150px;}}
+@media (max-width:700px){#kapital-v11 .m-how{padding:26px 0 42px;}#kapital-v11 .m-how h2{font-size:34px;}#kapital-v11 .m-how-grid{margin-top:18px;
+    gap:8px;}#kapital-v11 .m-how-card{min-height:136px;
+    padding:17px;
+    border-radius:15px;}#kapital-v11 .m-how-card h3{margin-top:20px;
+    font-size:20px;}#kapital-v11 .m-how-card p{font-size:11px;}}
+#kapital-v11 .m-how{padding-top:12px;padding-bottom:46px;}
+#kapital-v11 .m-how-card-result{background:#fff;border:1px solid rgba(11,16,13,.08);}
+#kapital-v11 .m-how-card-result:hover{border-color:rgba(11,127,94,.22);}
+#kapital-v11 .m-how-card-result .m-how-step b{background:#E4F4ED;color:var(--green2);}
+#kapital-v11 .m-how-card-result .m-how-step span{color:var(--green2);}
+#kapital-v11 .m-how-card-result h3{color:var(--ink);}
+#kapital-v11 .m-how-card-result p{color:var(--ink);}
+@media (max-width:700px){#kapital-v11 .m-value-proof{padding-bottom:8px;}#kapital-v11 .m-how{padding-top:10px;
+    padding-bottom:38px;}}
+#kapital-v11 .m-value-proof-conclusion{background:var(--green);}
+#kapital-v11 .m-value-proof-conclusion span{color:var(--lime);}
+#kapital-v11 .m-value-proof-conclusion b{color:#fff;}
+#kapital-v11 .m-value-proof{padding-bottom:36px;}
+@media (max-width:700px){#kapital-v11 .m-value-proof{padding-bottom:28px;}}
+@media (max-width:700px){#kapital-v11 .m-final h2{font-size:27px;
+    line-height:1.05;
+    letter-spacing:-.8px;}#kapital-v11 .m-final h2 em{margin-top:12px;}}
+#kapital-v11 .m-final{padding:50px 0;}
+#kapital-v11 .m-final-top{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:56px;align-items:center;}
+#kapital-v11 .m-final-copy{max-width:720px;}
+#kapital-v11 .m-final h2{margin:10px 0 0;max-width:700px;font-size:clamp(32px,3.15vw,44px);line-height:1.02;letter-spacing:-1.25px;font-weight:700;}
+#kapital-v11 .m-final h2 em{display:block;margin-top:8px;font-style:normal;color:#fff;}
+#kapital-v11 .m-final p{margin-top:16px;max-width:650px;font-size:13px;line-height:1.55;color:#C4D2CB;}
+#kapital-v11 .m-final-buy{padding:24px 0 24px 34px;border-left:1px solid rgba(255,255,255,.22);}
+#kapital-v11 .m-final-buy > span{font-size:9px;letter-spacing:.14em;}
+#kapital-v11 .m-final-buy strong{margin-top:10px;font-size:clamp(52px,5vw,70px);line-height:.92;letter-spacing:-2.7px;}
+#kapital-v11 .m-final-buy small{margin-top:9px;font-size:10px;}
+#kapital-v11 .m-final-buy .m-btn{margin-top:18px;min-height:46px;padding:0 17px;font-size:11px;}
+@media (max-width:820px){#kapital-v11 .m-final{padding:42px 0;}#kapital-v11 .m-final-top{grid-template-columns:1fr;
+    gap:28px;}#kapital-v11 .m-final h2{max-width:620px;
+    font-size:34px;}#kapital-v11 .m-final-buy{padding:22px 0 0;
+    border-left:0;
+    border-top:1px solid rgba(255,255,255,.22);}}
+@media (max-width:700px){#kapital-v11 .m-final h2{font-size:29px;
+    line-height:1.04;
+    letter-spacing:-.9px;}#kapital-v11 .m-final h2 em{margin-top:7px;}}
+#kapital-v11 .m-sprite{background-image:url("https://cdn.jsdelivr.net/gh/kapital-app/leto@master/assets/kapital-screens-03-06-sprite.webp");background-repeat:no-repeat;background-size:100% auto;display:block;filter:drop-shadow(0 24px 28px rgba(10,25,17,.11));position:relative;z-index:2}
+#kapital-v11 .m-s3{width:min(90%,308px);aspect-ratio:360/666;background-position:0 0}
+#kapital-v11 .m-s4{width:min(90%,336px);aspect-ratio:360/610;background-position:0 32.05%}
+#kapital-v11 .m-s5{width:min(90%,292px);aspect-ratio:360/702;background-position:0 64.25%}
+#kapital-v11 .m-s6{width:min(90%,289px);aspect-ratio:360/710;background-position:0 100%}
+@media(max-width:700px){#kapital-v11 .m-s3{width:min(94%,246px)}#kapital-v11 .m-s4{width:min(94%,269px)}#kapital-v11 .m-s5{width:min(94%,233px)}#kapital-v11 .m-s6{width:min(94%,231px)}}
