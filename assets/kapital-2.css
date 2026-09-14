@@ -1,0 +1,197 @@
+@media (max-width:1000px){#kapital-v11 .m-decisions-head,
+  #kapital-v11 .m-final-top{grid-template-columns:1fr;}#kapital-v11 .m-decision-list{grid-template-columns:1fr 1fr;}#kapital-v11 .m-final-buy{padding-left:0;
+    padding-top:24px;
+    border-left:0;
+    border-top:1px solid rgba(255,255,255,.16);}}
+@media (max-width:700px){#kapital-v11 .m-kicker{font-size:10px;}#kapital-v11 .m-hero h1{font-size:clamp(45px,12.5vw,62px);
+    line-height:.96;
+    letter-spacing:-2.8px;}#kapital-v11 .m-hero h1 .m-hero-green{margin-top:20px;}#kapital-v11 .m-software h2.m-software-title{font-size:34px;}#kapital-v11 .m-software-title span{white-space:normal;}#kapital-v11 .m-decision-list,
+  #kapital-v11 .m-fit-grid{grid-template-columns:1fr;}#kapital-v11 .m-decision{min-height:225px;}#kapital-v11 .m-fit-col{min-height:auto;
+    padding:24px 20px;}#kapital-v11 .m-fit-col h3{margin-top:28px;
+    font-size:24px;}#kapital-v11 .m-final{padding:56px 0 32px;}}
+#kapital-v11 .m-decisions{padding:82px 0;}
+#kapital-v11 .m-decisions .m-kicker{color:var(--green2);}
+#kapital-v11 .m-decisions-head{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:46px;align-items:end;}
+#kapital-v11 .m-decisions h2{margin:10px 0 0;color:var(--ink);font-size:clamp(36px,3.8vw,52px);line-height:1.01;letter-spacing:-2px;}
+#kapital-v11 .m-decisions h2 em{font-style:normal;color:var(--green2);}
+#kapital-v11 .m-decisions-head > p{margin:0 0 3px;color:var(--ink);font-size:15px;line-height:1.5;max-width:440px;}
+#kapital-v11 .m-decision-list{margin-top:38px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:0;}
+#kapital-v11 .m-decision{min-height:245px;padding:26px 28px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0;border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;background:#fff;color:var(--ink);position:relative;overflow:hidden;}
+#kapital-v11 .m-decision:nth-child(2n){border-right:0;}
+#kapital-v11 .m-decision:nth-child(n/**/+3){border-bottom:0;}
+#kapital-v11 .m-decision:after{content:"";position:absolute;width:84px;height:84px;border-radius:50%;right:-38px;bottom:-38px;background:var(--green2);opacity:.08;}
+#kapital-v11 .m-decision small{color:var(--green2);font-size:10px;letter-spacing:.14em;}
+#kapital-v11 .m-decision h3{margin:34px 0 0;max-width:500px;color:var(--ink);font-size:27px;line-height:1.08;letter-spacing:-.9px;}
+#kapital-v11 .m-decision p{margin:13px 0 0;max-width:500px;color:#414A44;font-size:13px;line-height:1.5;}
+#kapital-v11 .m-included{padding:82px 0;}
+#kapital-v11 .m-included .m-kicker{color:#55D3A4;}
+#kapital-v11 .m-included h2{color:#fff;}
+#kapital-v11 .m-included h2 em{font-style:normal;color:#55D3A4;}
+#kapital-v11 .m-included-head p{color:#BAC5BF;}
+#kapital-v11 .m-included-grid{border-top:1px solid rgba(255,255,255,.14);border-left:1px solid rgba(255,255,255,.14);}
+#kapital-v11 .m-included-item{border-right:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14);}
+#kapital-v11 .m-price{padding:88px 0;background:#fff;color:var(--ink);}
+#kapital-v11 .m-price-layout{display:grid;}
+#kapital-v11 .m-price-copy-side{padding:22px 0;align-self:center;}
+#kapital-v11 .m-price h2{margin:10px 0 0;max-width:620px;color:var(--ink);font-size:clamp(42px,4.7vw,64px);line-height:.98;letter-spacing:-2.5px;}
+#kapital-v11 .m-price-copy{margin:18px 0 0;max-width:560px;color:#3D4640;font-size:14px;line-height:1.55;}
+#kapital-v11 .m-price-copy b{color:var(--ink);}
+#kapital-v11 .m-price-list{margin-top:26px;display:flex;flex-wrap:wrap;gap:7px;max-width:580px;}
+#kapital-v11 .m-price-list span{padding:8px 10px;border:1px solid var(--line);border-radius:999px;color:#3E4942;font-size:10px;font-weight:850;}
+#kapital-v11 .m-price-card{background:var(--green2);color:#fff;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+#kapital-v11 .m-price-card:after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;right:-150px;top:-170px;background:#fff;opacity:.08;}
+#kapital-v11 .m-price-card-label{top:30px;left:36px;font-size:9px;letter-spacing:.14em;font-weight:900;color:#D9F5EA;}
+#kapital-v11 .m-price-num{position:relative;z-index:1;text-align:left;color:#fff;line-height:.84;}
+#kapital-v11 .m-price-once{position:relative;z-index:1;text-align:left;color:#fff;font-size:20px;}
+#kapital-v11 .m-price-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:15px;position:relative;z-index:1;justify-content:flex-start;}
+#kapital-v11 .m-price-tags span{padding:7px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.22);font-size:10px;font-weight:850;color:#E3F5ED;}
+#kapital-v11 .m-price-action{display:flex;position:relative;z-index:1;justify-content:flex-start;}
+#kapital-v11 .m-fit{padding:82px 0;background:var(--ink);color:#fff;}
+#kapital-v11 .m-fit .m-kicker{color:#55D3A4;}
+#kapital-v11 .m-fit-head{margin-bottom:38px;}
+#kapital-v11 .m-fit-head h2{color:#fff;font-size:clamp(40px,4.6vw,62px);}
+#kapital-v11 .m-fit-grid{display:grid;grid-template-columns:1fr 1px 1fr;gap:38px;border:0;}
+#kapital-v11 .m-fit-divider{width:1px;height:100%;background:rgba(255,255,255,.14);}
+#kapital-v11 .m-fit-col{min-height:330px;padding:0;border:0;border-radius:0;background:transparent;color:#fff;}
+#kapital-v11 .m-fit-col:first-child{border-right:0;}
+#kapital-v11 .m-fit-label{display:inline-flex;min-height:28px;padding:0 10px;align-items:center;border:1px solid rgba(255,255,255,.20);border-radius:999px;color:#fff;font-size:9px;letter-spacing:.13em;font-weight:900;}
+#kapital-v11 .m-fit-yes .m-fit-label{color:#55D3A4;border-color:rgba(85,211,164,.38);}
+#kapital-v11 .m-fit-col h3{margin:34px 0 0;max-width:500px;color:#fff;font-size:28px;line-height:1.08;}
+#kapital-v11 .m-fit-col li{position:relative;padding:14px 0 14px 31px;border-top:1px solid rgba(255,255,255,.14);color:#AEBAB4;font-size:13px;}
+#kapital-v11 .m-fit-col li b{color:#fff;}
+#kapital-v11 .m-fit-col li:before{position:absolute;left:0;top:13px;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:900;}
+#kapital-v11 .m-fit-yes li:before{content:"✓";background:#0B7F5E;color:#fff;}
+#kapital-v11 .m-fit-no li:before{content:"–";background:#252D28;color:#fff;}
+#kapital-v11 .m-faq-head{margin-top:60px;display:flex;align-items:end;justify-content:space-between;gap:20px;}
+#kapital-v11 .m-faq-head h3{margin:0;font-size:28px;letter-spacing:-.8px;color:var(--ink);}
+#kapital-v11 .m-faq{margin-top:18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+#kapital-v11 details{border-top:0;border-bottom:1px solid var(--line);}
+#kapital-v11 details:last-child{border-bottom:0;}
+#kapital-v11 summary{color:var(--ink);padding:21px 0;display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:12px;font-size:15px;font-weight:900;}
+#kapital-v11 summary:after{content:"+";width:30px;height:30px;border-radius:50%;border:1px solid #BFD2C8;color:var(--green2);display:grid;place-items:center;font-size:18px;line-height:1;}
+#kapital-v11 details[open] summary:after{content:"–";}
+#kapital-v11 .m-faq-num{color:var(--green2);font-size:10px;letter-spacing:.12em;}
+#kapital-v11 .m-faq-q{color:var(--ink);}
+#kapital-v11 details p{margin:-3px 42px 20px 70px;color:#59635D;font-size:13px;line-height:1.5;}
+#kapital-v11 .m-foot{color:#8D9690;border-top:0;}
+#kapital-v11 .m-foot a{color:#68716B;}
+@media (max-width:1000px){#kapital-v11 .m-price-layout{grid-template-columns:1fr;}#kapital-v11 .m-price-card{min-height:400px;}#kapital-v11 .m-fit-grid{grid-template-columns:1fr;
+    gap:28px;}#kapital-v11 .m-fit-divider{width:100%;
+    height:1px;}#kapital-v11 .m-final-buy{border-left:0;
+    border-top:1px solid rgba(255,255,255,.16);}}
+@media (max-width:700px){#kapital-v11 .m-decisions h2{font-size:36px;}#kapital-v11 .m-decision-list{grid-template-columns:1fr;}#kapital-v11 .m-decision{border-right:0;
+    border-bottom:1px solid var(--line);}#kapital-v11 .m-decision:nth-child(n/**/+3){border-bottom:1px solid var(--line);}#kapital-v11 .m-decision:last-child{border-bottom:0;}#kapital-v11 .m-price{padding:56px 0;}#kapital-v11 .m-price-card{min-height:360px;
+    padding:28px 22px;
+    border-radius:20px;}#kapital-v11 .m-price-card-label{left:22px;
+    top:22px;}#kapital-v11 .m-fit{padding:56px 0;}#kapital-v11 .m-fit-col{min-height:auto;}#kapital-v11 .m-fit-col h3{margin-top:26px;
+    font-size:24px;}#kapital-v11 .m-final{padding:56px 0 32px;}#kapital-v11 .m-faq-head{display:block;
+    margin-top:46px;}#kapital-v11 .m-faq-head h3{margin-top:8px;}#kapital-v11 summary{grid-template-columns:42px 1fr auto;
+    font-size:14px;}#kapital-v11 details p{margin:-3px 36px 18px 54px;}}
+#kapital-v11 .m-decisions{background:#fff;color:var(--ink);}
+#kapital-v11 .m-decisions .m-decision-list{border:0;gap:12px;}
+#kapital-v11 .m-decisions .m-decision{min-height:245px;padding:28px;border:0;border-radius:22px;background:var(--ink);color:#fff;}
+#kapital-v11 .m-decisions .m-decision:nth-child(2n),
+#kapital-v11 .m-decisions .m-decision:nth-child(n/**/+3){border:0;}
+#kapital-v11 .m-decisions .m-decision small{color:#55D3A4;}
+#kapital-v11 .m-decisions .m-decision h3{color:#fff;}
+#kapital-v11 .m-decisions .m-decision p{color:#B4C0B9;}
+#kapital-v11 .m-decisions .m-decision:after{width:120px;height:120px;right:-52px;bottom:-60px;background:var(--green2);opacity:.2;}
+#kapital-v11 .m-included{background:var(--ink);color:#fff;}
+#kapital-v11 .m-included-grid{margin-top:34px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;border:0;}
+#kapital-v11 .m-included-item{min-height:150px;padding:20px;background:#fff;border:0;border-radius:18px;color:var(--ink);}
+#kapital-v11 .m-included-item small{color:var(--green2);}
+#kapital-v11 .m-included-item h3{color:var(--ink);}
+#kapital-v11 .m-included-item p{color:#48514C;}
+#kapital-v11 .m-included-item:hover{background:#F2F7F4;transform:translateY(-2px);}
+#kapital-v11 .m-price-layout{grid-template-columns:minmax(0,1.15fr) minmax(360px,.85fr);gap:64px;align-items:center;}
+#kapital-v11 .m-price-card{min-height:0;padding:32px;border-radius:24px;justify-content:flex-start;}
+#kapital-v11 .m-price-card-label{position:static;margin-bottom:42px;}
+#kapital-v11 .m-price-num{font-size:clamp(68px,7vw,104px);letter-spacing:-5px;}
+#kapital-v11 .m-price-once{margin-top:14px;}
+#kapital-v11 .m-price-action{margin-top:24px;}
+#kapital-v11 .m-price-checks{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;max-width:620px;}
+#kapital-v11 .m-price-checks div{display:flex;align-items:center;gap:9px;color:#2F3933;font-size:13px;line-height:1.35;font-weight:700;}
+#kapital-v11 .m-price-checks span{width:22px;height:22px;flex:0 0 22px;display:grid;place-items:center;border-radius:50%;background:#E4F4ED;color:var(--green2);font-size:12px;font-weight:900;}
+#kapital-v11 .m-faq-section{padding:72px 0;background:#fff;}
+#kapital-v11 .m-faq-section .m-faq-head{margin:0 0 24px;display:grid;grid-template-columns:1fr .7fr;gap:40px;align-items:end;}
+#kapital-v11 .m-faq-section .m-faq-head h2{margin:9px 0 0;font-size:clamp(38px,4.2vw,56px);line-height:.98;letter-spacing:-2.2px;color:var(--ink);}
+#kapital-v11 .m-faq-section .m-faq-head > p{margin:0;color:#5C665F;font-size:13px;line-height:1.5;}
+#kapital-v11 .m-faq-section .m-faq{margin-top:0;}
+#kapital-v11 .m-final{padding-top:82px;}
+#kapital-v11 .m-final .m-foot{margin-top:56px;padding-top:18px;}
+@media (max-width:1000px){#kapital-v11 .m-included-grid{grid-template-columns:1fr 1fr;}#kapital-v11 .m-price-layout{grid-template-columns:1fr;
+    gap:34px;}#kapital-v11 .m-price-card{max-width:620px;}#kapital-v11 .m-faq-section .m-faq-head{grid-template-columns:1fr;}}
+@media (max-width:700px){#kapital-v11 .m-decisions .m-decision-list{grid-template-columns:1fr;}#kapital-v11 .m-included-grid{grid-template-columns:1fr;}#kapital-v11 .m-price-checks{grid-template-columns:1fr;}#kapital-v11 .m-price-card{padding:26px 22px;}#kapital-v11 .m-price-card-label{margin-bottom:30px;}#kapital-v11 .m-faq-section{padding:56px 0;}}
+#kapital-v11 .m-final .m-foot{color:#7E8983;border-top:1px solid rgba(255,255,255,.12);}
+#kapital-v11 .m-final .m-foot a{color:#AAB4AE;}
+@media (max-width:1000px){#kapital-v11 .m-final-buy{border-left:0;
+    border-top:1px solid rgba(255,255,255,.16);}}
+#kapital-v11 .m-final{color:#fff;}
+#kapital-v11 .m-final h2{color:#fff;}
+#kapital-v11 .m-final-buy strong{color:#fff;}
+#kapital-v11 .m-legal{color:var(--ink);}
+#kapital-v11 .m-legal .m-foot{margin:0;padding:0;border:0;text-align:center;}
+@media (max-width:1000px){#kapital-v11 .m-final-buy{border-left:0;
+    border-top:1px solid rgba(255,255,255,.24);}}
+#kapital-v11 .m-final{background:var(--green);}
+#kapital-v11 .m-final .m-kicker{color:var(--lime);}
+#kapital-v11 .m-final-buy > span{color:var(--lime);}
+#kapital-v11 .m-final-buy small{color:#ACC2B8;}
+#kapital-v11 .m-final .m-btn.green{background:#fff;color:var(--green);}
+#kapital-v11 .m-final .m-btn.green:hover{background:#F4F7F5;}
+#kapital-v11{font-family:"Onest",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-kerning:normal;text-rendering:optimizeLegibility;}
+#kapital-v11 .m-brand{font-weight:800;letter-spacing:-.45px;}
+#kapital-v11 .m-kicker{font-weight:700;letter-spacing:.13em;}
+#kapital-v11 .m-btn,
+#kapital-v11 .m-nav a,
+#kapital-v11 .m-tab,
+#kapital-v11 summary{font-weight:700;}
+#kapital-v11 .m-hero h1,
+#kapital-v11 .m-all h2,
+#kapital-v11 .m-demo h2,
+#kapital-v11 .m-software h2,
+#kapital-v11 .m-decisions h2,
+#kapital-v11 .m-included h2,
+#kapital-v11 .m-price h2,
+#kapital-v11 .m-fit-head h2,
+#kapital-v11 .m-final h2,
+#kapital-v11 .m-value-proof h2{font-weight:700;}
+#kapital-v11 .m-hero h1{letter-spacing:-2.6px;}
+#kapital-v11 .m-all h2,
+#kapital-v11 .m-demo h2,
+#kapital-v11 .m-included h2,
+#kapital-v11 .m-price h2,
+#kapital-v11 .m-fit-head h2,
+#kapital-v11 .m-final h2,
+#kapital-v11 .m-value-proof h2{letter-spacing:-1.8px;}
+#kapital-v11 .m-feature h3,
+#kapital-v11 .m-slide-copy h3,
+#kapital-v11 .m-software-card h3,
+#kapital-v11 .m-decision h3,
+#kapital-v11 .m-included-item h3,
+#kapital-v11 .m-fit-col h3,
+#kapital-v11 .m-faq-head h2{font-weight:700;}
+#kapital-v11 .m-feature strong,
+#kapital-v11 .m-proof strong,
+#kapital-v11 .m-strip-item strong,
+#kapital-v11 .m-price-num,
+#kapital-v11 .m-final-buy strong{font-weight:700;font-variant-numeric:tabular-nums;}
+#kapital-v11 .m-hero p,
+#kapital-v11 .m-all-head p,
+#kapital-v11 .m-demo-head p,
+#kapital-v11 .m-software-head p,
+#kapital-v11 .m-price-copy,
+#kapital-v11 .m-final p{font-weight:400;}
+#kapital-v11 .m-value-proof h2 em{font-style:normal;}
+#kapital-v11 .m-value-proof-item{border-right:1px solid rgba(255,255,255,.13);}
+#kapital-v11 .m-value-proof-item:last-child{border-right:0;}
+#kapital-v11 .m-value-proof-item span{max-width:210px;}
+#kapital-v11 .m-value-proof-conclusion{border-top:0;}
+@media (max-width:1000px){#kapital-v11 .m-value-proof-head{grid-template-columns:1fr}#kapital-v11 .m-value-proof-panel{grid-template-columns:1fr 1fr}#kapital-v11 .m-value-proof-item:nth-child(2){border-right:0}#kapital-v11 .m-value-proof-item:nth-child(-n/**/+2){border-bottom:1px solid rgba(255,255,255,.13)}}
+@media (max-width:700px){#kapital-v11 .m-hero h1{letter-spacing:-1.8px}#kapital-v11 .m-value-proof{padding:56px 0}#kapital-v11 .m-value-proof-panel{grid-template-columns:1fr;border-radius:20px}#kapital-v11 .m-value-proof-item{min-height:150px;border-right:0;border-bottom:1px solid rgba(255,255,255,.13)}#kapital-v11 .m-value-proof-item:last-child{border-bottom:0}#kapital-v11 .m-value-proof-conclusion{grid-template-columns:1fr;gap:5px}}
+#kapital-v11 .m-value-proof:before{content:"";position:absolute;width:460px;height:460px;border-radius:50%;right:-220px;top:-250px;background:#CFE3D8;opacity:.55;}
+#kapital-v11 .m-value-proof:after{content:"";position:absolute;width:250px;height:250px;border-radius:50%;left:-150px;bottom:-150px;background:#D8E7DF;opacity:.7;}
+#kapital-v11 .m-value-proof-item small{margin-bottom:auto;}
+@media (max-width:1000px){#kapital-v11 .m-value-proof-panel{grid-template-columns:1fr 1fr;}}
+@media (max-width:700px){#kapital-v11 .m-value-proof{padding:58px 0;}#kapital-v11 .m-value-proof-panel{grid-template-columns:1fr;}#kapital-v11 .m-value-proof-item{min-height:155px;}#kapital-v11 .m-value-proof-conclusion{grid-template-columns:1fr;
+    gap:5px;}}
