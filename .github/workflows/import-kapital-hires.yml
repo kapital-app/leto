@@ -1,0 +1,50 @@
+name: Import Kapital hires assets
+
+on:
+  push:
+    paths:
+      - '.github/workflows/import-kapital-hires.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  import-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download original screenshots
+        run: |
+          set -euo pipefail
+          mkdir -p assets/landing-v13-hires /tmp/kapital-src
+          curl -fL 'https://mcp.wpvibe.ai/staging/up_daeef310f7c24427/uf_9899171b4e14490f.png?t=4FSRnJVCRkv26k_-yUTiMzqISZBq1IozNJJq86RbRJM' -o /tmp/kapital-src/main.png
+          curl -fL 'https://mcp.wpvibe.ai/staging/up_daeef310f7c24427/uf_f69be9b8907f4b5a.png?t=4FSRnJVCRkv26k_-yUTiMzqISZBq1IozNJJq86RbRJM' -o /tmp/kapital-src/money.png
+          curl -fL 'https://mcp.wpvibe.ai/staging/up_daeef310f7c24427/uf_04f3e55b0a5a4cf6.png?t=4FSRnJVCRkv26k_-yUTiMzqISZBq1IozNJJq86RbRJM' -o /tmp/kapital-src/accounts.png
+          curl -fL 'https://mcp.wpvibe.ai/staging/up_daeef310f7c24427/uf_90a9bfdcda104ce3.png?t=4FSRnJVCRkv26k_-yUTiMzqISZBq1IozNJJq86RbRJM' -o /tmp/kapital-src/balance.png
+          curl -fL 'https://mcp.wpvibe.ai/staging/up_daeef310f7c24427/uf_29ab8652353e472c.png?t=4FSRnJVCRkv26k_-yUTiMzqISZBq1IozNJJq86RbRJM' -o /tmp/kapital-src/more.png
+
+      - name: Convert to high-quality WebP
+        run: |
+          set -euo pipefail
+          if ! command -v cwebp >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y webp
+          fi
+          for name in main money accounts balance more; do
+            cwebp -quiet -q 95 -m 6 -alpha_q 100 "/tmp/kapital-src/${name}.png" -o "assets/landing-v13-hires/${name}.webp"
+          done
+          file assets/landing-v13-hires/*.webp
+
+      - name: Commit assets
+        run: |
+          set -euo pipefail
+          git config user.name 'kapital-app'
+          git config user.email '46200896+kapital-app@users.noreply.github.com'
+          git add assets/landing-v13-hires/*.webp
+          if git diff --cached --quiet; then
+            echo 'No changes to commit'
+            exit 0
+          fi
+          git commit -m 'Add high-resolution landing screenshots'
+          git push
