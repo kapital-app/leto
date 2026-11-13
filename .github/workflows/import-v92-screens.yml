@@ -1,0 +1,55 @@
+name: Import Kapital 2026 phone mockups
+
+on:
+  push:
+    paths:
+      - '.github/workflows/import-v92-screens.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  import-screens:
+    if: github.ref == 'refs/heads/feat/refresh-landing-phone-mockups-20261113'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download five user-approved PNG images
+        env:
+          MAIN_URL: 'https://mcp.wpvibe.ai/staging/up_907f552aa27d4d53/uf_1d861635d5824b18/_03_.png?t=C5JqYK4vCyDRw-d4VZILA05ZYVAwGatv5_ZkV17zD_c'
+          MONEY_URL: 'https://mcp.wpvibe.ai/staging/up_907f552aa27d4d53/uf_37ae3c47a6e3449e/_02_.png?t=C5JqYK4vCyDRw-d4VZILA05ZYVAwGatv5_ZkV17zD_c'
+          ACCOUNTS_URL: 'https://mcp.wpvibe.ai/staging/up_907f552aa27d4d53/uf_f8e31b4b98e34194/_05_.png?t=C5JqYK4vCyDRw-d4VZILA05ZYVAwGatv5_ZkV17zD_c'
+          BALANCE_URL: 'https://mcp.wpvibe.ai/staging/up_907f552aa27d4d53/uf_7f8fe8ab316d4be6/_01_.png?t=C5JqYK4vCyDRw-d4VZILA05ZYVAwGatv5_ZkV17zD_c'
+          MORE_URL: 'https://mcp.wpvibe.ai/staging/up_907f552aa27d4d53/uf_a2167887e8324d4d/_04_.png?t=C5JqYK4vCyDRw-d4VZILA05ZYVAwGatv5_ZkV17zD_c'
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/kapital-v92-png assets/tilda-v92/screens
+          curl -fsSL --retry 3 --max-time 60 "$MAIN_URL" -o /tmp/kapital-v92-png/main.png
+          curl -fsSL --retry 3 --max-time 60 "$MONEY_URL" -o /tmp/kapital-v92-png/money.png
+          curl -fsSL --retry 3 --max-time 60 "$ACCOUNTS_URL" -o /tmp/kapital-v92-png/accounts.png
+          curl -fsSL --retry 3 --max-time 60 "$BALANCE_URL" -o /tmp/kapital-v92-png/balance.png
+          curl -fsSL --retry 3 --max-time 60 "$MORE_URL" -o /tmp/kapital-v92-png/more.png
+          for name in main money accounts balance more; do
+            file "/tmp/kapital-v92-png/$name.png"
+            head -c 8 "/tmp/kapital-v92-png/$name.png" | od -An -tx1 | grep -q '89 50 4e 47 0d 0a 1a 0a'
+          done
+          if ! command -v cwebp >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq webp
+          fi
+          for name in main money accounts balance more; do
+            cwebp -quiet -q 94 -m 6 -alpha_q 100 -mt "/tmp/kapital-v92-png/$name.png" -o "assets/tilda-v92/screens/$name.webp"
+            test -s "assets/tilda-v92/screens/$name.webp"
+          done
+          file assets/tilda-v92/screens/*.webp
+
+      - name: Commit the imported WebP images
+        run: |
+          set -euo pipefail
+          git config user.name 'kapital-app'
+          git config user.email '46200896+kapital-app@users.noreply.github.com'
+          git add assets/tilda-v92/screens/*.webp
+          test "$(git diff --cached --name-only | wc -l)" -eq 5
+          git commit -m 'assets: add five consistent Kapital 2026 phone mockups'
+          git push
