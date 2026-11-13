@@ -1,0 +1,45 @@
+name: Export Kapital landing HTML for Tilda
+
+on:
+  push:
+    paths:
+      - '.github/workflows/export-tilda-html.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    if: github.ref == 'refs/heads/chore/export-tilda-html-20261113'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate images and HTML
+        run: node scripts/verify-landing-v92.mjs
+      - name: Prepare two ready-to-paste Tilda blocks
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/kapital-tilda-export
+          cp assets/tilda-v90/kapital-v90-remote-q94.html /tmp/kapital-tilda-export/Kapital_Tilda_7000.html
+          cp assets/tilda-v90/kapital-v90-remote.html /tmp/kapital-tilda-export/Kapital_Tilda_5000.html
+          cat > /tmp/kapital-tilda-export/README.txt <<'EOF'
+          Kapital - Tilda HTML block T123
+          1. Open Tilda page editor.
+          2. Add block T123 (HTML Code).
+          3. Open the desired HTML file as UTF-8 text and copy ALL its contents.
+          4. Paste into block T123. Publish the page.
+          5. Do not paste both HTML files into the same block.
+          6. Price difference: 7000 RUB in Kapital_Tilda_7000.html vs 5000 RUB in Kapital_Tilda_5000.html. Verify which matches the actual offer before publishing.
+          Images: five updated phone screens, loaded from public GitHub CDN with raw GitHub fallback.
+          EOF
+          test -s /tmp/kapital-tilda-export/Kapital_Tilda_7000.html
+          test -s /tmp/kapital-tilda-export/Kapital_Tilda_5000.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Kapital_Tilda_HTML_20261113
+          path: /tmp/kapital-tilda-export/
+          retention-days: 7
+          if-no-files-found: error
