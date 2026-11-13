@@ -1,0 +1,23 @@
+name: Verify Kapital landing photos
+
+on:
+  pull_request:
+    paths:
+      - 'assets/tilda-v90/kapital-v90-remote*.html'
+      - 'assets/tilda-v92/screens/**'
+      - 'scripts/verify-landing-v92.mjs'
+      - '.github/workflows/verify-landing-v92.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify-landing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify screenshots, destinations and copy
+        run: node scripts/verify-landing-v92.mjs
