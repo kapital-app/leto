@@ -1,3 +1,14 @@
-# leto
+# Капитал — актуальный продающий HTML для Tilda
 
-Landing assets for Kapital.
+**Единственный актуальный исходник:** [kapital-7k.html](./kapital-7k.html).
+
+В Tilda открой блок T123 (HTML-код), скопируй в него весь файл и опубликуй страницу.
+Тексты, дизайн, цена 7 000 ₽ и ссылка оплаты — из предоставленного владельцем HTML.
+Заменены только изображения пяти экранов приложения (плюс повтор «Главной» в hero).
+
+Активные зависимости находятся в `assets/kapital-*.css`,
+`assets/tilda-v90/kapital-v90-inline.css`, `assets/tilda-v90/kapital-v90-inline.js`
+и `assets/tilda-v92/screens/`.
+Старые экспериментальные HTML и поколения изображений удалены.
+
+Проверка: `node scripts/verify-landing-v92.mjs`.
