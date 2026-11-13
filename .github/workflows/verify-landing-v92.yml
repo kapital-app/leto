@@ -1,12 +1,13 @@
-name: Verify Kapital landing photos
+name: Verify canonical Kapital Tilda page
 
 on:
   pull_request:
     paths:
-      - 'assets/tilda-v90/kapital-v90-remote*.html'
+      - 'kapital-7k.html'
       - 'assets/tilda-v92/screens/**'
       - 'scripts/verify-landing-v92.mjs'
       - '.github/workflows/verify-landing-v92.yml'
+      - 'assets/**'
 
 permissions:
   contents: read
@@ -19,5 +20,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verify screenshots, destinations and copy
+      - name: Check user's Tilda HTML and new phone images
         run: node scripts/verify-landing-v92.mjs
