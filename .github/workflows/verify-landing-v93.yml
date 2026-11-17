@@ -4,9 +4,9 @@ on:
   pull_request:
     paths:
       - 'kapital-7k.html'
-      - 'assets/tilda-v92/screens/**'
-      - 'scripts/verify-landing-v92.mjs'
-      - '.github/workflows/verify-landing-v92.yml'
+      - 'assets/tilda-v93/screens/**'
+      - 'scripts/verify-landing-v93.mjs'
+      - '.github/workflows/verify-landing-v93.yml'
       - 'assets/**'
 
 permissions:
@@ -20,5 +20,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check user's Tilda HTML and new phone images
-        run: node scripts/verify-landing-v92.mjs
+      - name: Verify current Tilda HTML and framed screenshots
+        run: node scripts/verify-landing-v93.mjs
