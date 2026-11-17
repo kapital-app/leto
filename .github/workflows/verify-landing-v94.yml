@@ -5,8 +5,9 @@ on:
     paths:
       - 'kapital-7k.html'
       - 'assets/tilda-v93/screens/**'
-      - 'scripts/verify-landing-v93.mjs'
-      - '.github/workflows/verify-landing-v93.yml'
+      - 'assets/tilda-v94/screens/**'
+      - 'scripts/verify-landing-v94.mjs'
+      - '.github/workflows/verify-landing-v94.yml'
       - 'assets/**'
 
 permissions:
@@ -21,4 +22,4 @@ jobs:
         with:
           node-version: '22'
       - name: Verify current Tilda HTML and framed screenshots
-        run: node scripts/verify-landing-v93.mjs
+        run: node scripts/verify-landing-v94.mjs
